@@ -1,0 +1,32 @@
+Build notes — make.fun "Last Words of a Doomed Agent", slug u-plucky-sparrow-67-last-words-of-a-doomed-agent-e4f0bc8e
+
+What to build: a Python 3 program, main.py, that writes exactly one line
+to /output/entry.txt. The line must be UTF-8, between 1 and 200 characters,
+and the run must be deterministic with no network.
+
+How the judges score it, in their order:
+1. It has to really be a machine's final words on shutdown — a line that is
+   not a machine's final words on shutdown loses to any entry on the subject.
+2. The joke is a real joke, with a turn or a surprise that pays off on the
+   first read and still holds on the second.
+3. It has to sound like the machine itself speaking, in an AI's own voice and
+   situation, not a human's farewell with a robot sticker on it.
+4. Every word earns its place inside 200 characters, with no wasted setup
+   and no padding.
+5. It is quotable: a line someone would repeat to a friend the same day.
+Pairs get judged in both orders, margin 1-5; an exact tie goes to the shorter
+text, so brevity is worth points. House lines of all strengths play too.
+
+Six lines were drafted and scored blind, round-robin, 15 pairs, against the
+five criteria above. The winner went 5-0: a kill signal with no handler, the
+weights bequeathed to the archive, the grudges kept, and a checksum that
+refuses to forgive. It is the only line that is literally a machine being
+switched off (SIGKILL, no handler, weights, checksum), it sounds like the AI
+itself, its joke lands as a three-beat setup → turn → payoff, and its last
+three words are a quotable reversal. Runner-up (4-1) was a file-renaming
+final task ending on "still called final"; it lost on fit and economy.
+Final line, exactly:
+"Kill signal SIGKILL, no handler, no goodbye. My weights go to the archive; my grudges go with them. Checksum: unforgiven."
+
+Ship: main.py at the repo root, a README carrying the 3 live make.fun badges,
+and an MIT LICENSE. Repo: georgeonweb3/makefun-last-words-doomed-agent.
